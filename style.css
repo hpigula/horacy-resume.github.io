@@ -1,0 +1,84 @@
+/* Base Colors & Background */
+.bg-navy-900 {
+    background-color: #0f172a;
+}
+
+/* Glassmorphism for Navbar */
+.nav-blur {
+    background-color: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+}
+
+/* Typography Gradient */
+.gradient-text {
+    background: linear-gradient(90deg, #60a5fa, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Card Styles */
+.card-primary {
+    background-color: rgba(30, 58, 138, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card-primary:hover {
+    transform: translateY(-4px);
+    background-color: rgba(30, 58, 138, 0.3);
+}
+
+.card-secondary {
+    background-color: rgba(30, 41, 59, 0.4);
+}
+
+/* Timeline Customization */
+.dot-blue {
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 9999px;
+    background-color: #3b82f6;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.dot-gray {
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 9999px;
+    background-color: #1e293b;
+}
+
+.timeline-item {
+    transition: opacity 0.3s ease;
+}
+
+.timeline-item:hover {
+    opacity: 1 !important;
+}
+
+/* Language Tags */
+.lang-status {
+    font-family: ui-monospace, monospace;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #60a5fa;
+}
+
+.lang-tag {
+    transition: border-color 0.3s ease;
+}
+
+.lang-tag:hover {
+    border-color: #3b82f6;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
