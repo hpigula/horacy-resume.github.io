@@ -11,7 +11,7 @@
 /* Skills Tags */
 .tag {
     background-color: #1e293b;
-    color: #94a3b8;
+    color: #ebeced;
     padding: 0.4rem 0.9rem;
     border-radius: 0.6rem;
     font-size: 0.75rem;
@@ -42,6 +42,7 @@
 
 /* Cards */
 .cert-card, .edu-card {
+    color: #ebeced;
     background-color: rgba(30, 41, 59, 0.4);
     padding: 1.5rem;
     border-radius: 1.25rem;

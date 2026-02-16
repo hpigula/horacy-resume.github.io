@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,123 +10,151 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body class="bg-navy-900 text-slate-300 font-sans selection:bg-blue-500/30">
 
     <div class="fixed top-6 right-6 z-[100]">
-        <button onclick="toggleLanguage()" id="langBtn" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-6 rounded-full shadow-xl border border-blue-400 transition-all flex items-center gap-2 scale-100 hover:scale-105">
-            <i class="fas fa-globe"></i>
-            <span id="langText">PL</span>
+        <button onclick="toggleLanguage()" id="langBtn"
+            class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-6 rounded-full shadow-xl border border-blue-400 transition-all flex items-center gap-2 scale-100 hover:scale-105">
+            <i class="fas fa-globe text-xs"></i>
+            <span id="langText" class="text-xs uppercase">PL</span>
         </button>
     </div>
 
     <header class="py-20 px-6 max-w-5xl mx-auto">
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-6 mb-12">
             <div>
                 <h1 class="text-6xl font-extrabold text-white mb-2 leading-tight tracking-tighter">
-                    Horacy <span class="gradient-text">Piguła</span>
+                    Horacy Piguła
                 </h1>
                 <p class="text-xl text-blue-400 font-medium lang-en">Junior System Administrator | Junior Cloud Administrator</p>
                 <p class="text-xl text-blue-400 font-medium lang-pl hidden">Młodszy Administrator Systemowy | Młodszy Administrator Chmury</p>
+                
+                <div class="flex gap-4 mt-3 text-[14px] font-bold uppercase tracking-widest text-slate-500">
+                    <span class="flex items-center gap-1">
+                        <span class="text-yellow-500">English:</span> 
+                        <span class="text-white lang-en">C1 Advanced</span>
+                        <span class="text-white lang-pl hidden">C1 Zaawansowany</span>
+                    </span>
+                    
+                    <span class="flex items-center gap-1">
+                        <span class="text-yellow-500">Polish:</span> 
+                        <span class="text-white lang-en">Native</span>
+                        <span class="text-white lang-pl hidden">Ojczysty</span>
+                    </span>
+                </div>
             </div>
-            <div class="flex flex-col gap-2 text-sm text-slate-400 border-l border-slate-700 pl-6">
-                <a href="mailto:horacy.pigula@gmail.com" class="hover:text-white transition"><i class="fas fa-envelope mr-2"></i> horacy.pigula@gmail.com</a>
-                <a href="tel:+48889169547" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i> +48 889 169 547</a>
+            
+            <div class="flex flex-col gap-2 text-sm  text-slate-250 border-l border-slate-700 pl-6">
+                <a href="mailto:horacy.pigula@gmail.com" class="hover:text-white transition">
+                    <i class="fas fa-envelope mr-2"></i> horacy.pigula@gmail.com</a>
+                <a href="tel:+48889169547" class="hover:text-white transition">
+                    <i class="fas fa-phone mr-2"></i> +48 889 169 547</a>
                 <span><i class="fas fa-map-marker-alt mr-2"></i> Lodz, Poland</span>
-                <a href="https://linkedin.com/in/horacy-pigula" target="_blank" class="hover:text-white transition"><i class="fab fa-linkedin mr-2"></i> linkedin.com/in/horacy-pigula</a>
+                <a href="https://linkedin.com/in/horacy-pigula" target="_blank" class="hover:text-white transition">
+                    <i class="fab fa-linkedin mr-2"></i> linkedin.com/in/horacy-pigula</a>
             </div>
         </div>
 
         <div class="max-w-3xl">
-            <h2 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4 lang-en">Professional Summary</h2>
-            <h2 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4 lang-pl hidden">Podsumowanie Zawodowe</h2>
-            <p class="text-lg leading-relaxed text-slate-400 lang-en">
-                Infrastructure-focused IT Engineer with <span class="text-white">4+ years of experience</span> in system operations, cloud administration, and automation. Proven track record managing <span class="text-white">Microsoft Entra ID, Linux (Ubuntu/Debian)</span>, and <span class="text-white">Docker</span> environments. Azure Fundamentals certified.
+            <h2 class="text-s font-bold uppercase tracking-widest text-yellow-500 mb-4 lang-en">Professional Summary</h2>
+            <h2 class="text-s font-bold uppercase tracking-widest text-yellow-500 mb-4 lang-pl hidden">Podsumowanie Zawodowe</h2>
+            <p class="text-lg leading-relaxed text-white lang-en">
+                Infrastructure-focused IT Engineer with 4+ years of experience in system operations, cloud administration, and automation. Proven track record managing 
+                Microsoft Entra ID, Linux (Ubuntu/Debian), and environments. Azure Fundamentals certified.
             </p>
-            <p class="text-lg leading-relaxed text-slate-400 lang-pl hidden">
-                Inżynier IT skoncentrowany na infrastrukturze z <span class="text-white">ponad 4-letnim doświadczeniem</span> w operacjach systemowych, administracji chmurowej i automatyzacji. Doświadczenie w zarządzaniu środowiskami <span class="text-white">Microsoft Entra ID, Linux (Ubuntu/Debian)</span> oraz <span class="text-white">Docker</span>. Certyfikat Azure Fundamentals.
+            <p class="text-lg leading-relaxed text-white lang-pl hidden">
+                Inżynier IT skoncentrowany na infrastrukturze z ponad 4-letnim doświadczeniem w operacjach systemowych, administracji chmurowej i automatyzacji. 
+                Doświadczenie w zarządzaniu środowiskami Microsoft Entra ID, Linux (Ubuntu/Debian) oraz Docker. Certyfikat Azure Fundamentals.
             </p>
         </div>
     </header>
 
     <main class="max-w-5xl mx-auto px-6 space-y-24 pb-24">
-        
-        <section>
-            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-4">
+
+        <section id="skills">
+            <h2 class="text-2xl font-bold text-yellow-500 mb-8 flex items-center gap-4">
                 <span class="lang-en">Technical Skills</span>
                 <span class="lang-pl hidden">Umiejętności Techniczne</span>
                 <span class="h-px bg-slate-800 flex-1"></span>
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="skill-category">
-                    <h3 class="text-blue-400 font-bold mb-4">Cloud & Identity</h3>
+                    <h3 class="text-orange-300 font-bold mb-4">Cloud & Identity</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="tag">Microsoft Entra ID</span> <span class="tag">Azure Fundamentals</span> <span class="tag">M365 Administration</span> <span class="tag">IAM</span> <span class="tag">RBAC</span> <span class="tag">MFA</span>
+                        <span class="tag">Microsoft Entra ID</span> <span class="tag">Azure Fundamentals</span> 
+                        <span class="tag">M365 Administration</span> <span class="tag">IAM</span> 
+                        <span class="tag">RBAC</span> <span class="tag">MFA</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3 class="text-blue-400 font-bold mb-4 lang-en">Systems & Virtualization</h3>
-                    <h3 class="text-blue-400 font-bold mb-4 lang-pl hidden">Systemy i Wirtualizacja</h3>
+                    <h3 class="text-orange-300 font-bold mb-4 lang-en">Systems & Virtualization</h3>
+                    <h3 class="text-orange-300 font-bold mb-4 lang-pl hidden">Systemy i Wirtualizacja</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="tag">Linux (Ubuntu/Debian)</span> <span class="tag">Docker</span> <span class="tag">Windows Server</span> <span class="tag">KVM/VirtualBox</span>
+                        <span class="tag">Linux (Ubuntu/Debian)</span> <span class="tag">Docker</span> 
+                        <span class="tag">Windows Server</span> <span class="tag">KVM/VirtualBox</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3 class="text-blue-400 font-bold mb-4 lang-en">Automation & Tools</h3>
-                    <h3 class="text-blue-400 font-bold mb-4 lang-pl hidden">Automatyzacja i Narzędzia</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tag">Bash & Python Scripting</span> <span class="tag">Jira</span> <span class="tag">ServiceNow</span> <span class="tag">Postman</span> <span class="tag">Wireshark</span>
+                    <h3 class="text-orange-300 font-bold mb-4 lang-en">Automation & Tools</h3>
+                    <h3 class="text-orange-300 font-bold mb-4 lang-pl hidden">Automatyzacja i Narzędzia</h3>
+                    <div class="flex flex-wrap gap-2 text-white">
+                        <span class="tag">Bash & Python Scripting</span> <span class="tag">Jira</span> 
+                        <span class="tag">ServiceNow</span> <span class="tag">Postman</span> <span class="tag">Wireshark</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3 class="text-blue-400 font-bold mb-4 lang-en">Networking & Security</h3>
-                    <h3 class="text-blue-400 font-bold mb-4 lang-pl hidden">Sieci i Bezpieczeństwo</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tag">TCP/IP</span> <span class="tag">DNS</span> <span class="tag">VPN (OpenVPN/IPsec)</span> <span class="tag">Basic Routing</span> <span class="tag">Firewall Management</span>
+                    <h3 class="text-orange-300 font-bold mb-4 lang-en">Networking & Security</h3>
+                    <h3 class="text-orange-300 font-bold mb-4 lang-pl hidden">Sieci i Bezpieczeństwo</h3>
+                    <div class="flex text-white flex-wrap gap-2">
+                        <span class="tag">TCP/IP</span> <span class="tag">DNS</span> 
+                        <span class="tag">VPN (OpenVPN/IPsec)</span> <span class="tag">Basic Routing</span> 
+                        <span class="tag">Firewall Management</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2 class="text-2xl font-bold text-white mb-12 flex items-center gap-4">
+        <section id="experience">
+            <h2 class="text-2xl font-bold text-yellow-500 mb-12 flex items-center gap-4">
                 <span class="lang-en">Professional Experience</span>
                 <span class="lang-pl hidden">Doświadczenie Zawodowe</span>
                 <span class="h-px bg-slate-800 flex-1"></span>
             </h2>
-            
+
             <div class="space-y-16">
                 <div class="relative pl-8 border-l-2 border-blue-500/30">
                     <div class="dot-blue"></div>
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-xl font-bold text-white">Technical Support Specialist (Infrastructure)</h3>
+                        <h3 class="text-xl font-bold text-orange-300">Technical Support Specialist (Infrastructure)</h3>
                         <span class="text-sm font-mono text-slate-500">04.2025 — Present</span>
                     </div>
                     <p class="text-blue-400 font-medium mb-4">Sii Polska</p>
-                    <ul class="space-y-3 text-slate-400 lang-en">
+                    <ul class="space-y-3 text-slate-400 text-white lang-en">
                         <li><strong>System Reliability & RCA:</strong> Secured operational stability of national health platforms by resolving critical synchronization failures.</li>
                         <li><strong>Containerization:</strong> Accelerated testing cycles by 30% through the implementation of localized Docker environments.</li>
                         <li><strong>Network Administration:</strong> Optimized network routing and connectivity configurations, reducing support tickets by 20% while ensuring full security compliance.</li>
                     </ul>
-                    <ul class="space-y-3 text-slate-400 lang-pl hidden">
+                    <ul class="space-y-3 text-slate-400 text-white lang-pl hidden">
                         <li><strong>Niezawodność Systemów i RCA:</strong> Zapewnienie stabilności operacyjnej krajowych platform zdrowotnych poprzez rozwiązywanie krytycznych awarii synchronizacji.</li>
                         <li><strong>Konteneryzacja:</strong> Przyspieszenie cykli testowych o 30% dzięki wdrożeniu lokalnych środowisk Docker.</li>
-                        <li><strong>Administracja Siecią:</strong> Optymalizacja routingu i konfiguracji połączeń sieciowych, co pozwoliło na redukcję zgłoszeń serwisowych o 20% przy zachowaniu pełnej zgodności z procedurami bezpieczeństwa.</li>
+                        <li><strong>Administracja Siecią:</strong> Optymalizacja routingu i konfiguracji połączeń sieciowych, co pozwoliło na redukcję zgłoszeń o 20% przy zachowaniu pełnej zgodności z procedurami bezpieczeństwa.</li>
                     </ul>
                 </div>
 
                 <div class="relative pl-8 border-l-2 border-slate-800">
                     <div class="dot-gray"></div>
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-xl font-bold text-white">Customer Support Advisor (Operations & Automation)</h3>
+                        <h3 class="text-xl font-bold text-orange-300">Customer Support Advisor (Operations & Automation)</h3>
                         <span class="text-sm font-mono text-slate-500">01.2024 — 02.2025</span>
                     </div>
                     <p class="text-blue-400 font-medium mb-4">Alorica & Foundever</p>
-                    <ul class="space-y-3 text-slate-400 lang-en">
+                    <ul class="space-y-3 text-slate-400 text-white lang-en">
                         <li><strong>Infrastructure Automation:</strong> Developed Bash and Python scripts for maintenance, saving 5 hours of manual effort weekly.</li>
                         <li><strong>Cloud Deployment:</strong> Led transition to Microsoft 365 and managed provisioning of 200+ workstations.</li>
                         <li><strong>Fleet Management:</strong> Maintained 90% SLA for hardware and software requests through optimized workflows.</li>
                     </ul>
-                    <ul class="space-y-3 text-slate-400 lang-pl hidden">
+                    <ul class="space-y-3 text-slate-400 text-white lang-pl hidden">
                         <li><strong>Automatyzacja Infrastruktury:</strong> Tworzenie skryptów Bash/Python, oszczędzające 5h pracy manualnej tygodniowo.</li>
                         <li><strong>Wdrożenia Chmurowe:</strong> Zarządzanie migracją do Microsoft 365 i provisioningiem ponad 200 stacji roboczych.</li>
                         <li><strong>Zarządzanie Flotą:</strong> Utrzymanie SLA na poziomie 90% poprzez optymalizację procesów obsługi zgłoszeń.</li>
@@ -135,59 +164,59 @@
                 <div class="relative pl-8 border-l-2 border-slate-800">
                     <div class="dot-gray"></div>
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-xl font-bold text-white">Senior Service Desk Agent (Tier 1 with partial Tier 2/Systems)</h3>
+                        <h3 class="text-xl font-bold text-orange-300">Senior Service Desk Agent (Tier 2/Systems)</h3>
                         <span class="text-sm font-mono text-slate-500">11.2021 — 08.2023</span>
                     </div>
                     <p class="text-blue-400 font-medium mb-4">Fujitsu</p>
-                    <ul class="space-y-3 text-slate-400 lang-en">
+                    <ul class="space-y-3 text-slate-400 text-white lang-en">
                         <li><strong>Critical Support:</strong> Provided high-touch VIP support for C-level executives, ensuring zero downtime in global environments.</li>
                         <li><strong>Proactive Maintenance:</strong> Designed remote diagnostic checklists, significantly minimizing hardware-related downtime.</li>
                     </ul>
-                    <ul class="space-y-3 text-slate-400 lang-pl hidden">
+                    <ul class="space-y-3 text-slate-400 text-white lang-pl hidden">
                         <li><strong>Wsparcie Krytyczne:</strong> Obsługa VIP dla kadry zarządzającej (C-level), zapewniająca ciągłość pracy w środowisku globalnym.</li>
-                        <li><strong>Proaktywne Utrzymanie:</strong> Projektowanie list kontrolnych diagnostyki zdalnej, minimalizujące przestoj sprzętowy.</li>
+                        <li><strong>Proaktywne Utrzymanie:</strong> Projektowanie list kontrolnych diagnostyki zdalnej, minimalizujące przestoje sprzętowe.</li>
                     </ul>
                 </div>
-                <h2 class="text-2xl font-bold text-white mb-12 flex items-center gap-4">
-                <span class="lang-en">Legacy Work Experience</span>
-                <span class="lang-pl hidden">Wczesne Doświadczenie Zawodowe</span>
-                <span class="h-px bg-slate-800 flex-1"></span>
-                
-            </h2>
-            <div class="relative pl-8 border-l-2 border-slate-800">
-                    <div class="dot-gray"></div>
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-xl font-bold text-white">Customer Support Advisor (Operations & Automation)</h3>
-                        <span class="text-sm font-mono text-slate-500">01.2024 — 02.2025</span>
-                    </div>
-                    <p class="text-blue-400 font-medium mb-4">Alorica & Foundever</p>
-                    <ul class="space-y-3 text-slate-400 lang-en">
-                        <li><strong>Infrastructure Automation:</strong> Developed Bash and Python scripts for maintenance, saving 5 hours of manual effort weekly.</li>
-                        <li><strong>Cloud Deployment:</strong> Led transition to Microsoft 365 and managed provisioning of 200+ workstations.</li>
-                        <li><strong>Fleet Management:</strong> Maintained 90% SLA for hardware and software requests through optimized workflows.</li>
-                    </ul>
-                    <ul class="space-y-3 text-slate-400 lang-pl hidden">
-                        <li><strong>Automatyzacja Infrastruktury:</strong> Tworzenie skryptów Bash/Python, oszczędzające 5h pracy manualnej tygodniowo.</li>
-                        <li><strong>Wdrożenia Chmurowe:</strong> Zarządzanie migracją do Microsoft 365 i provisioningiem ponad 200 stacji roboczych.</li>
-                        <li><strong>Zarządzanie Flotą:</strong> Utrzymanie SLA na poziomie 90% poprzez optymalizację procesów obsługi zgłoszeń.</li>
-                    </ul>
-                </div>
+
+                <h2 class="text-2xl font-bold text-yellow-500 mb-12 flex items-center gap-4">
+                    <span class="lang-en">Early Work Experience</span>
+                    <span class="lang-pl hidden">Wczesne Doświadczenie Zawodowe</span>
+                    <span class="h-px bg-slate-800 flex-1"></span>
+                </h2>
+
                 <div class="relative pl-8 border-l-2 border-slate-800">
                     <div class="dot-gray"></div>
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-xl font-bold text-white">Retail Assistant</h3>
-                        <span class="text-sm font-mono text-slate-500">02/2020 – 05/2021</span>
+                        <h3 class="text-xl font-bold text-orange-300">Retail Assistant</h3>
+                        <span class="text-sm font-mono text-slate-500">02.2020 – 05.2021</span>
                     </div>
-                    <p class="text-blue-400 font-medium mb-4">"Anna" Store"</p>
-                    <ul class="space-y-3 text-slate-400 lang-en">
-                        <li><strong>Customer Service & Volume:</strong> Managed high-volume retail operations for 100+ daily customers, ensuring high service quality and 100% transaction accuracy in a fast-paced environment.</li>
-                        <li><strong>Inventory & Stock Optimization:</strong> Optimized inventory and delivery workflows through rigorous stock auditing, resulting in a 2% increase in returning clients due to improved product availability.</li>
-                        <li><strong>Equipment Maintenance & Troubleshooting:</strong> Spearheaded hardware troubleshooting and maintenance for printing/copying systems, reducing equipment downtime by 32% and improving overall service reliability.</li>
+                    <p class="text-blue-400 font-medium mb-4">"Anna" Store</p>
+                    <ul class="space-y-3 text-slate-400 text-white lang-en">
+                        <li><strong>Customer Service:</strong> Managed operations for 50+ daily customers with 100% transaction accuracy.</li>
+                        <li><strong>Inventory Optimization:</strong> Optimized workflows and auditing, increasing returning clients by 2%.</li>
+                        <li><strong>Equipment Troubleshooting:</strong> Maintained printing/copying systems, reducing downtime by 32%.</li>
                     </ul>
-                    <ul class="space-y-3 text-slate-400 lang-pl hidden">
-                        <li><strong>PL: Obsługa Operacyjna i Wysokonakładowa: </strong> Zarządzanie operacjami sprzedaży dla ponad 100 klientów dziennie, zapewniając wysoką jakość obsługi oraz pełną poprawność transakcji w dynamicznym środowisku.</li>
-                        <li><strong>Zarządzanie Zasobami i Optymalizacja Procesów:</strong> Optymalizacja procesów magazynowych i dostaw, co zaowocowało 2-procentowym wzrostem liczby powracających klientów dzięki poprawie dostępności towarów.</li>
-                        <li><strong>Rozwiązywanie Problemów Technicznych i Utrzymanie Infrastruktury:</strong> Nadzór nad diagnostyką i konserwacją systemów drukujących, co pozwoliło na zmniejszenie przestojów sprzętowych o 32% i znaczną poprawę niezawodności usług.</li>
+                    <ul class="space-y-3 text-slate-400 text-white lang-pl hidden">
+                        <li><strong>Obsługa Klienta:</strong> Zarządzanie operacjami dla ponad 50 klientów dziennie przy pełnej poprawności transakcji.</li>
+                        <li><strong>Optymalizacja Zasobów:</strong> Nadzór nad inwentaryzacją, co zwiększyło wskaźnik powracających klientów o 2%.</li>
+                        <li><strong>Rozwiązywanie Problemów:</strong> Konserwacja systemów drukujących, redukująca przestoje sprzętowe o 32%.</li>
+                    </ul>
+                </div>
+
+                <div class="relative pl-8 border-l-2 border-slate-800">
+                    <div class="dot-gray"></div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-orange-300">Computer Technician</h3>
+                        <span class="text-sm font-mono text-slate-500">08.2013 – 05.2015</span>
+                    </div>
+                    <p class="text-blue-400 font-medium mb-4">Camara Education Ltd.</p>
+                    <ul class="space-y-3 text-slate-400 text-white lang-en">
+                        <li><strong>Asset Tracking:</strong> Achieved 100% integrity for 200+ devices through meticulous auditing.</li>
+                        <li><strong>Workstation Deployment:</strong> Accelerated deployment by 30% through standardized OS imaging.</li>
+                    </ul>
+                    <ul class="space-y-3 text-slate-400 text-white lang-pl hidden">
+                        <li><strong>Śledzenie Zasobów:</strong> Osiągnięcie 100% rzetelności inwentaryzacyjnej dla ponad 200 urządzeń.</li>
+                        <li><strong>Wdrażanie Stacji Roboczych:</strong> Przyspieszenie instalacji o 30% dzięki standaryzacji obrazów systemu.</li>
                     </ul>
                 </div>
             </div>
@@ -195,38 +224,43 @@
 
         <section class="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div>
-                <h2 class="text-2xl font-bold text-white mb-8 lang-en">Certifications</h2>
-                <h2 class="text-2xl font-bold text-white mb-8 lang-pl hidden">Certyfikaty</h2>
+                <h2 class="text-2xl font-bold text-yellow-500 mb-8 lang-en">Certifications</h2>
+                <h2 class="text-2xl font-bold text-yellow-500 mb-8 lang-pl hidden">Certyfikaty</h2>
                 <div class="space-y-4">
                     <div class="cert-card">
                         <div class="text-white font-bold text-lg leading-tight">Azure Fundamentals (AZ-900)</div>
                         <div class="text-blue-400 text-sm italic">Microsoft Certified | Feb 2026</div>
                     </div>
                     <div class="cert-card">
-                        <div class="text-white font-bold text-lg leading-tight">E.14 Certification</div>
-                        <div class="text-slate-400 text-sm lang-en">Web Design, Database Admin & Implementation</div>
-                        <div class="text-slate-400 text-sm lang-pl hidden">Tworzenie aplikacji internetowych, baz danych i ich realizacja</div>
+                        <div class="text-white font-bold text-lg leading-tight">
+                            <span class="lang-en ">E.14 Certification</span>
+                            <span class="lang-pl hidden">Certyfikat E.14</span>
+                        </div>
+                        <div class="text-blue-400 text-sm">
+                            <span class="lang-en text-blue-400 ">Web Development & Database Administration</span>
+                            <span class="lang-pl text-blue-400 hidden">Tworzenie aplikacji internetowych i baz danych</span>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div>
-                <h2 class="text-2xl font-bold text-white mb-8 lang-en">Education & Languages</h2>
-                <h2 class="text-2xl font-bold text-white mb-8 lang-pl hidden">Edukacja i Języki</h2>
-                <div class="space-y-6">
-                    <div class="edu-card">
-                        <h4 class="text-white font-bold">Data Networking (Cisco CCNA Based)</h4>
-                        <p class="text-slate-400 text-sm">Killester College of Further Education (Dublin)</p>
+                <h2 class="text-2xl font-bold text-yellow-500 mb-8 lang-en">Education</h2>
+                <h2 class="text-2xl font-bold text-yellow-500 mb-8 lang-pl hidden">Edukacja</h2>
+                <div class="space-y-4">
+                    <div class="cert-card">
+                        <div class="text-white font-bold text-lg leading-tight">
+                            <span class="lang-en">IT & eBusiness</span>
+                            <span class="lang-pl hidden">Informatyka i e-Biznes</span>
+                        </div>
+                        <div class="text-blue-400 text-sm">Killester College of Further Education (Dublin)</div>
                     </div>
-                    <div class="flex gap-4">
-                        <div class="flex-1 p-4 bg-slate-800/40 rounded-xl border border-slate-700/50 text-center">
-                            <span class="text-xs uppercase text-slate-500 font-bold block mb-1">Polish</span>
-                            <span class="text-white font-bold lang-en">Native</span>
-                            <span class="text-white font-bold lang-pl hidden">Ojczysty</span>
+                    <div class="cert-card">
+                        <div class="text-white font-bold text-lg leading-tight">
+                            <span class="lang-en">Data Networking (Cisco CCNA Based)</span>
+                            <span class="lang-pl hidden">Sieci Komputerowe (Oparte na Cisco CCNA)</span>
                         </div>
-                        <div class="flex-1 p-4 bg-slate-800/40 rounded-xl border border-slate-700/50 text-center">
-                            <span class="text-xs uppercase text-slate-500 font-bold block mb-1">English</span>
-                            <span class="text-white font-bold">C1 Advanced</span>
-                        </div>
+                        <div class="text-blue-400 text-sm">Killester College of Further Education (Dublin)</div>
                     </div>
                 </div>
             </div>
@@ -234,4 +268,5 @@
     </main>
 
 </body>
+
 </html>
