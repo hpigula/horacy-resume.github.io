@@ -29,11 +29,13 @@ A clean, accessible, and performant portfolio website built with **vanilla HTML,
 ├── index.html          # Main portfolio page
 ├── style.css           # Custom styles
 ├── script.js           # Language toggle & initialization
-├── favicon.ico         # Browser tab icon (add your own)
-├── favicon.svg         # SVG favicon
+├── schema.json         # JSON-LD Person schema (loaded dynamically for SEO)
+├── favicon.ico         # Browser tab icon
+├── favicon.svg         # SVG favicon (fallback)
 ├── robots.txt          # Search engine crawler directives
 ├── sitemap.xml         # SEO sitemap
-└── .gitignore          # Git configuration
+├── README.md           # This file
+└── .gitignore          # Git ignore rules
 ```
 
 ## 🚀 Getting Started
@@ -42,26 +44,30 @@ A clean, accessible, and performant portfolio website built with **vanilla HTML,
    ```bash
    git clone https://github.com/yourusername/horacy-resume.github.io.git
    cd horacy-resume.github.io
+   ``` — no build tools needed!
+   
+   Option A: Open in browser
+   ```bash
+   # Just open the file directly in your browser
+   open index.html
    ```
-
-2. **Open locally**:
-   - Open `index.html` in any modern browser
-   - Or run a local server:
-     ```bash
-     # Python 3
-     python -m http.server 8000
-     
-     # Python 2
-     python -m SimpleHTTPServer 8000
-     
-     # Node.js (http-server)
-     npx http-server
-     ```
-   - Visit `http://localhost:8000`
+   
+   Option B: Run a local server (for testing with fetch/schema.json)
+   ```bash
+   # Python 3
+   python -m http.server 8000
+   
+   # Node.js
+   npx http-server
+   ```
+   Then visit `http://localhost:8000`
 
 3. **Customize**:
-   - Edit `index.html` for content
-   - Edit `style.css` for custom styling
+   - Edit `index.html` for content (experience, skills, certifications, etc.)
+   - Edit `style.css` for custom styling (colors, fonts, layout)
+   - Update `schema.json` if contact info or job title changes (important for SEO)
+   - Replace `favicon.ico` with your own branding
+   - Update language strings in `script.js` if needed
    - Replace `favicon.ico` with your own (ensure it's 32×32 or 64×64 PNG/ICO)
    - Update contact info in the `<address>` section
 
@@ -80,11 +86,20 @@ git push origin main
 - Screen-reader tested
 - Keyboard-navigable
 - High contrast colors
-- Semantic HTML
+- **JSON-LD Person schema** (stored in separate `schema.json` for maintainability)
+- **Sitemap and robots.txt** for search engine crawling
+- **Open Graph & Twitter meta tags** for social sharing
+- **Canonical URL** to prevent duplicate content
+- **Mobile-friendly** responsive design
+- **Fast load times** (~50KB total size)
 
-## 📊 SEO
+## 🛠️ Tech Stack
 
-- JSON-LD Person schema
+- **No build tools** — pure HTML, CSS, and JavaScript
+- **Tailwind CSS** via CDN (production-ready CSS framework)
+- **Material Design SVG icons** (lightweight, scalable, no external dependencies)
+- **Vanilla JavaScript** for language toggle and dynamic schema injection
+- **Static hosting** ready (GitHub Pages, Netlify, Vercel, etc.)schema
 - Sitemap and robots.txt
 - Open Graph meta tags
 - Mobile-friendly
