@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://horacy-resume.github.io/sitemap.xml

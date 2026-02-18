@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Horacy Piguła",
+  "jobTitle": "Junior System Administrator | Junior Cloud Administrator",
+  "url": "https://horacy-resume.github.io",
+  "email": "horacy.pigula@gmail.com",
+  "telephone": "+48889169547",
+  "sameAs": ["https://linkedin.com/in/horacy-pigula"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lodz",
+    "addressCountry": "PL"
+  },
+  "knowsAbout": ["Cloud Administration", "System Administration", "Linux", "Docker", "Microsoft Entra ID", "Azure"]
+}
