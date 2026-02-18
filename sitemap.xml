@@ -15,4 +15,19 @@
     <lastmod>2026-02-18</lastmod>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://horacy-resume.github.io/#certifications</loc>
+    <lastmod>2026-02-18</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://horacy-resume.github.io/#education</loc>
+    <lastmod>2026-02-18</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://horacy-resume.github.io/data.json</loc>
+    <lastmod>2026-02-18</lastmod>
+    <priority>0.5</priority>
+  </url>
 </urlset>

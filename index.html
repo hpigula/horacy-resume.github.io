@@ -45,21 +45,19 @@
     <header class="py-20 px-6 max-w-5xl mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-start gap-6 mb-12">
             <div>
-                <h1 class="text-6xl font-extrabold text-white mb-2 leading-tight tracking-tighter">
-                    Horacy Piguła
-                </h1>
-                <p class="text-xl text-blue-400 font-medium lang-en">Junior System Administrator | Junior Cloud Administrator</p>
-                <p class="text-xl text-blue-400 font-medium lang-pl hidden">Młodszy Administrator Systemowy | Młodszy Administrator Chmury</p>
+                <h1 id="profileName" class="text-6xl font-extrabold text-white mb-2 leading-tight tracking-tighter">Horacy Piguła</h1>
+                <p id="jobTitleEn" class="text-xl text-blue-400 font-medium lang-en">Junior System Administrator | Junior Cloud Administrator</p>
+                <p id="jobTitlePl" class="text-xl text-blue-400 font-medium lang-pl hidden">Młodszy Administrator Systemowy | Młodszy Administrator Chmury</p>
                 
                 <div class="flex gap-4 mt-3 text-[14px] font-bold uppercase tracking-widest text-slate-500">
-                    <span class="flex items-center gap-1">
-                        <span class="text-yellow-500">English:</span> 
+                    <span id="langEnglish" class="flex items-center gap-1">
+                        <span class="text-yellow-500 lang-en">English:</span>
                         <span class="text-white lang-en">C1 Advanced</span>
                         <span class="text-white lang-pl hidden">C1 Zaawansowany</span>
                     </span>
                     
-                    <span class="flex items-center gap-1">
-                        <span class="text-yellow-500">Polish:</span> 
+                    <span id="langPolish" class="flex items-center gap-1">
+                        <span class="text-yellow-500 lang-en">Polish:</span>
                         <span class="text-white lang-en">Native</span>
                         <span class="text-white lang-pl hidden">Ojczysty</span>
                     </span>
@@ -67,30 +65,24 @@
             </div>
             
             <address class="flex flex-col gap-2 text-sm not-italic text-slate-250 border-l border-slate-700 pl-6">
-                <a href="mailto:horacy.pigula@gmail.com" class="hover:text-white transition flex items-center gap-2">
+                <a id="emailLink" href="mailto:horacy.pigula@gmail.com" class="hover:text-white transition flex items-center gap-2">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                     horacy.pigula@gmail.com</a>
-                <a href="tel:+48889169547" class="hover:text-white transition flex items-center gap-2">
+                <a id="phoneLink" href="tel:+48889169547" class="hover:text-white transition flex items-center gap-2">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.92 7.02C17.45 6.18 16.51 5.55 15.46 5.55c-1.05 0-1.99.63-2.46 1.47-.97-1.81-2.99-3.01-5.28-3.01-3.35 0-6.08 2.73-6.08 6.08 0 .5.04 1 .12 1.48C2.02 11.78.8 13.74.8 16c0 2.26 1.22 4.22 3.04 5.3.08.48.12.98.12 1.48 0 3.35 2.73 6.08 6.08 6.08 2.29 0 4.31-1.2 5.28-3.01.47.84 1.41 1.47 2.46 1.47 1.05 0 1.99-.63 2.46-1.47 1.81-.96 3.04-2.92 3.04-5.18 0-2.26-1.22-4.22-3.04-5.3.08-.48.12-.98.12-1.48 0-3.35-2.73-6.08-6.08-6.08z"/></svg>
                     +48 889 169 547</a>
-                <span class="flex items-center gap-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg> Lodz, Poland</span>
-                <a href="https://linkedin.com/in/horacy-pigula" target="_blank" rel="noopener noreferrer" class="hover:text-white transition flex items-center gap-2">
+                <span id="locationSpan" class="flex items-center gap-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg> Lodz, Poland</span>
+                <a id="linkedinLink" href="https://linkedin.com/in/horacy-pigula" target="_blank" rel="noopener noreferrer" class="hover:text-white transition flex items-center gap-2">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.74c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.74h2.5M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.5H5.5v8.5h2.77z"/></svg>
                     linkedin.com/in/horacy-pigula</a>
             </address>
         </div>
 
-        <div class="max-w-3xl">
+            <div class="max-w-3xl">
             <h2 class="text-s font-bold uppercase tracking-widest text-yellow-500 mb-4 lang-en">Professional Summary</h2>
             <h2 class="text-s font-bold uppercase tracking-widest text-yellow-500 mb-4 lang-pl hidden">Podsumowanie Zawodowe</h2>
-            <p class="text-lg leading-relaxed text-white lang-en">
-                I'm an infrastructure-focused IT Engineer with 4+ years of experience in system operations, cloud administration, and automation. Proven track record managing 
-                Microsoft Entra ID, Linux (Ubuntu/Debian), and environments. Recently I've acquired the Azure Fundamentals certified.
-            </p>
-            <p class="text-lg leading-relaxed text-white lang-pl hidden">
-               Jestem inżynierem IT skoncentrowanym na infrastrukturze z ponad 4-letnim doświadczeniem w operacjach systemowych, administracji chmurowej i automatyzacji. 
-                Mam doświadczenie w zarządzaniu środowiskami Microsoft Entra ID, Linux (Ubuntu/Debian) oraz Docker. Niedawno zdobyłem certyfikat Azure Fundamentals.
-            </p>
+            <p id="summaryEn" class="text-lg leading-relaxed text-white lang-en">I'm an infrastructure-focused IT Engineer with 4+ years of experience in system operations, cloud administration, and automation. Proven track record managing Microsoft Entra ID, Linux (Ubuntu/Debian), and environments. Recently I've acquired the Azure Fundamentals certified.</p>
+            <p id="summaryPl" class="text-lg leading-relaxed text-white lang-pl hidden">Jestem inżynierem IT skoncentrowanym na infrastrukturze z ponad 4-letnim doświadczeniem w operacjach systemowych, administracji chmurowej i automatyzacji. Mam doświadczenie w zarządzaniu środowiskami Microsoft Entra ID, Linux (Ubuntu/Debian) oraz Docker. Niedawno zdobyłem certyfikat Azure Fundamentals.</p>
         </div>
     </header>
 
@@ -102,41 +94,7 @@
                 <span class="lang-pl hidden">Umiejętności Techniczne</span>
                 <span class="h-px bg-slate-800 flex-1"></span>
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="skill-category">
-                    <h3 class="text-orange-300 font-bold mb-4">Cloud & Identity</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tag">M365 Administration</span><span class="tag">Microsoft Entra ID</span> 
-                        <span class="tag">Azure Fundamentals</span><span class="tag">IAM</span> 
-                        <span class="tag">RBAC</span> <span class="tag">MFA</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="text-orange-300 font-bold mb-4 lang-en">Systems & Virtualization</h3>
-                    <h3 class="text-orange-300 font-bold mb-4 lang-pl hidden">Systemy i Wirtualizacja</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tag">Linux (Ubuntu/Debian)</span> <span class="tag">Docker</span> 
-                        <span class="tag">Windows Server</span> <span class="tag">KVM/VirtualBox</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="text-orange-300 font-bold mb-4 lang-en">Automation & Tools</h3>
-                    <h3 class="text-orange-300 font-bold mb-4 lang-pl hidden">Automatyzacja i Narzędzia</h3>
-                    <div class="flex flex-wrap gap-2 text-white">
-                        <span class="tag">Bash & Python Scripting</span> <span class="tag">Jira</span> 
-                        <span class="tag">ServiceNow</span> <span class="tag">Postman</span> <span class="tag">Wireshark</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="text-orange-300 font-bold mb-4 lang-en">Networking & Security</h3>
-                    <h3 class="text-orange-300 font-bold mb-4 lang-pl hidden">Sieci i Bezpieczeństwo</h3>
-                    <div class="flex text-white flex-wrap gap-2">
-                        <span class="tag">TCP/IP</span> <span class="tag">DNS</span> 
-                        <span class="tag">VPN (OpenVPN/IPsec)</span> <span class="tag">Basic Routing</span> 
-                        <span class="tag">Firewall Management</span>
-                    </div>
-                </div>
-            </div>
+            <div id="skillsContainer" class="grid grid-cols-1 md:grid-cols-2 gap-8"></div>
         </section>
 
         <section id="experience">
@@ -146,152 +104,180 @@
                 <span class="h-px bg-slate-800 flex-1"></span>
             </h2>
 
-            <div class="space-y-16">
-                <div class="relative pl-8 border-l-2 border-blue-500/30">
-                    <div class="dot-blue"></div>
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-xl font-bold text-orange-300">Technical Support Specialist (Infrastructure)</h3>
-                        <span class="text-sm font-mono text-slate-500"><time datetime="2025-04">04.2025</time> — Present</span>
-                    </div>
-                    <p class="text-blue-400 font-medium mb-4">Sii Polska</p>
-                    <ul class="space-y-3 text-slate-400 text-white lang-en">
-                       <li><strong>Project Delivery & Site Support: </strong>Contributing to infrastructure projects and ensuring operational stability for large-scale enterprise platforms.</li> 
-                        <li><strong>System Reliability & RCA:</strong> Secured operational stability of national health platforms by resolving critical synchronization failures.</li>
-                        <li><strong>Containerization:</strong> Accelerated testing cycles by 30% through the implementation of localized Docker environments.</li>
-                        <li><strong>Network Administration:</strong> Optimized network routing and connectivity configurations, reducing support tickets by 20% while ensuring full security compliance.</li>
-                    </ul>
-                    <ul class="space-y-3 text-slate-400 text-white lang-pl hidden">
-                        <li><strong>Wsparcie lokalne i realizacja projektów: </strong>Udział w projektach infrastrukturalnych oraz zapewnianie stabilności operacyjnej dla platform o dużej skali.</li>
-                        <li><strong>Niezawodność Systemów i RCA:</strong> Zapewnienie stabilności operacyjnej krajowych platform zdrowotnych poprzez rozwiązywanie krytycznych awarii synchronizacji.</li>
-                        <li><strong>Konteneryzacja:</strong> Przyspieszenie cykli testowych o 30% dzięki wdrożeniu lokalnych środowisk Docker.</li>
-                        <li><strong>Administracja Siecią:</strong> Optymalizacja routingu i konfiguracji połączeń sieciowych, co pozwoliło na redukcję zgłoszeń o 20% przy zachowaniu pełnej zgodności z procedurami bezpieczeństwa.</li>
-                    </ul>
-                </div>
-
-                <div class="relative pl-8 border-l-2 border-slate-800">
-                    <div class="dot-gray"></div>
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-xl font-bold text-orange-300">Customer Support Advisor (Operations & Automation)</h3>
-                        <span class="text-sm font-mono text-slate-500"><time datetime="2024-01">01.2024</time> — <time datetime="2025-02">02.2025</time></span>
-                    </div>
-                    <p class="text-blue-400 font-medium mb-4">Alorica & Foundever</p>
-                    <ul class="space-y-3 text-slate-400 text-white lang-en">
-                        <li><strong>Infrastructure Automation:</strong> Developed Bash/Python scripts, saving 5+ hours of manual work weekly.</li>
-                        <li><strong>Cloud Deployment:</strong> Led transition to Microsoft 365 and managed provisioning of 200+ enterprise workstations.</li>
-                        <li><strong>Fleet Management:</strong> Maintained 90% SLA for hardware and software requests through optimized workflows.</li>
-                    </ul>
-                    <ul class="space-y-3 text-slate-400 text-white lang-pl hidden">
-                        <li><strong>Automatyzacja Infrastruktury:</strong> Tworzenie skryptów Bash/Python, oszczędzające 5h pracy manualnej tygodniowo.</li>
-                        <li><strong>Wdrożenia Chmurowe:</strong> Zarządzanie migracją do Microsoft 365 i provisioningiem ponad 200 stacji roboczych.</li>
-                        <li><strong>Zarządzanie Flotą:</strong> Utrzymanie SLA na poziomie 90% poprzez optymalizację procesów obsługi zgłoszeń.</li>
-                    </ul>
-                </div>
-
-                <div class="relative pl-8 border-l-2 border-slate-800">
-                    <div class="dot-gray"></div>
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-xl font-bold text-orange-300">Senior Service Desk Agent (Tier 1 with partial Tier 2/Systems)</h3>
-                        <span class="text-sm font-mono text-slate-500"><time datetime="2021-11">11.2021</time> — <time datetime="2023-08">08.2023</time></span>
-                    </div>
-                    <p class="text-blue-400 font-medium mb-4">Fujitsu</p>
-                    <ul class="space-y-3 text-slate-400 text-white lang-en">
-                        <li><strong>Critical Support:</strong> Provided high-touch VIP support for C-level executives, ensuring zero downtime in global environments.</li>
-                        <li><strong>Proactive Maintenance:</strong> Designed remote diagnostic checklists, significantly minimizing hardware-related downtime.</li>
-                    </ul>
-                    <ul class="space-y-3 text-slate-400 text-white lang-pl hidden">
-                        <li><strong>Wsparcie Krytyczne:</strong> Obsługa VIP dla kadry zarządzającej (C-level), zapewniająca ciągłość pracy w środowisku globalnym.</li>
-                        <li><strong>Proaktywne Utrzymanie:</strong> Projektowanie list kontrolnych diagnostyki zdalnej, minimalizujące przestoje sprzętowe.</li>
-                    </ul>
-                </div>
-
-                <h2 class="text-2xl font-bold text-yellow-500 mb-12 flex items-center gap-4">
-                    <span class="lang-en">Foundation Experience</span>
-                    <span class="lang-pl hidden">Korzenie Techniczne</span>
-                    <span class="h-px bg-slate-800 flex-1"></span>
-                </h2>
-
-                <div class="relative pl-8 border-l-2 border-slate-800">
-                    <div class="dot-gray"></div>
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-xl font-bold text-orange-300">Retail Assistant</h3>
-                        <span class="text-sm font-mono text-slate-500"><time datetime="2020-02">02.2020</time> – <time datetime="2021-05">05.2021</time></span>
-                    </div>
-                    <p class="text-blue-400 font-medium mb-4">"Anna" Store</p>
-                    <ul class="space-y-3 text-slate-400 text-white lang-en">
-                        <li><strong>Customer Service:</strong> Managed operations for 50+ daily customers with 100% transaction accuracy.</li>
-                        <li><strong>Inventory Optimization:</strong> Optimized workflows and auditing, increasing returning clients by 2%.</li>
-                        <li><strong>Equipment Troubleshooting:</strong> Maintained printing/copying systems, reducing downtime by 32%.</li>
-                    </ul>
-                    <ul class="space-y-3 text-slate-400 text-white lang-pl hidden">
-                        <li><strong>Obsługa Klienta:</strong> Zarządzanie operacjami dla ponad 50 klientów dziennie przy pełnej poprawności transakcji.</li>
-                        <li><strong>Optymalizacja Zasobów:</strong> Nadzór nad inwentaryzacją, co zwiększyło wskaźnik powracających klientów o 2%.</li>
-                        <li><strong>Rozwiązywanie Problemów:</strong> Konserwacja systemów drukujących, redukująca przestoje sprzętowe o 32%.</li>
-                    </ul>
-                </div>
-
-                <div class="relative pl-8 border-l-2 border-slate-800">
-                    <div class="dot-gray"></div>
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-xl font-bold text-orange-300">Computer Technician</h3>
-                        <span class="text-sm font-mono text-slate-500"><time datetime="2013-08">08.2013</time> – <time datetime="2015-05">05.2015</time></span>
-                    </div>
-                    <p class="text-blue-400 font-medium mb-4">Camara Education Ltd.</p>
-                    <ul class="space-y-3 text-slate-400 text-white lang-en">
-                        <li><strong>Asset & Licensing Management:</strong> Achieved 100% integrity for 200+ devices through meticulous auditing.</li>
-                        <li><strong>Workstation Deployment:</strong> Accelerated deployment by 30% through standardized OS imaging.</li>
-                    </ul>
-                    <ul class="space-y-3 text-slate-400 text-white lang-pl hidden">
-                        <li><strong>Śledzenie Zasobów:</strong> Osiągnięcie 100% rzetelności inwentaryzacyjnej dla ponad 200 urządzeń.</li>
-                        <li><strong>Wdrażanie Stacji Roboczych:</strong> Przyspieszenie instalacji o 30% dzięki standaryzacji obrazów systemu.</li>
-                    </ul>
-                </div>
-            </div>
+            <div id="experienceContainer" class="space-y-16"></div>
         </section>
 
         <section class="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div>
                 <h2 class="text-2xl font-bold text-yellow-500 mb-8 lang-en">Certifications</h2>
                 <h2 class="text-2xl font-bold text-yellow-500 mb-8 lang-pl hidden">Certyfikaty</h2>
-                <div class="space-y-4">
-                    <div class="cert-card">
-                        <div class="text-white font-bold text-lg leading-tight">Azure Fundamentals (AZ-900)</div>
-                        <div class="text-blue-400 text-sm italic">Microsoft Certified | Feb 2026</div>
-                    </div>
-                    <div class="cert-card">
-                        <div class="text-white font-bold text-lg leading-tight">
-                            <span class="lang-en ">E.14 Certification</span>
-                            <span class="lang-pl hidden">Certyfikat E.14</span>
-                        </div>
-                        <div class="text-blue-400 text-sm">
-                            <span class="lang-en text-blue-400 ">Web Development & Database Administration</span>
-                            <span class="lang-pl text-blue-400 hidden">Tworzenie aplikacji internetowych i baz danych</span>
-                        </div>
-                    </div>
-                </div>
+                <div id="certificationsContainer" class="space-y-4"></div>
             </div>
 
             <div>
                 <h2 class="text-2xl font-bold text-yellow-500 mb-8 lang-en">Education</h2>
                 <h2 class="text-2xl font-bold text-yellow-500 mb-8 lang-pl hidden">Edukacja</h2>
-                <div class="space-y-4">
-                    <div class="cert-card">
-                        <div class="text-white font-bold text-lg leading-tight">
-                            <span class="lang-en">IT & eBusiness</span>
-                            <span class="lang-pl hidden">Informatyka i e-Biznes</span>
-                        </div>
-                        <div class="text-blue-400 text-sm">Killester College of Further Education (Dublin)</div>
-                    </div>
-                    <div class="cert-card">
-                        <div class="text-white font-bold text-lg leading-tight">
-                            <span class="lang-en">Data Networking (Cisco CCNA Based)</span>
-                            <span class="lang-pl hidden">Sieci Komputerowe (Oparte na Cisco CCNA)</span>
-                        </div>
-                        <div class="text-blue-400 text-sm">Killester College of Further Education (Dublin)</div>
-                    </div>
-                </div>
+                <div id="educationContainer" class="space-y-4"></div>
             </div>
         </section>
     </main>
+
+        <!-- Inline fallback data so the page works when opened via file:// -->
+        <script id="site-data" type="application/json">
+        {
+            "meta": {
+                "name": "Horacy Piguła",
+                "url": "https://horacy-resume.github.io",
+                "jobTitle": {
+                    "en": "Junior System Administrator | Junior Cloud Administrator",
+                    "pl": "Młodszy Administrator Systemowy | Młodszy Administrator Chmury"
+                },
+                "summary": {
+                    "en": "I'm an infrastructure-focused IT Engineer with 4+ years of experience in system operations, cloud administration, and automation. Proven track record managing Microsoft Entra ID, Linux (Ubuntu/Debian), and environments. Recently I've acquired the Azure Fundamentals certified.",
+                    "pl": "Jestem inżynierem IT skoncentrowanym na infrastrukturze z ponad 4-letnim doświadczeniem w operacjach systemowych, administracji chmurowej i automatyzacji. Mam doświadczenie w zarządzaniu środowiskami Microsoft Entra ID, Linux (Ubuntu/Debian) oraz Docker. Niedawno zdobyłem certyfikat Azure Fundamentals."
+                },
+                "contact": {
+                    "email": "horacy.pigula@gmail.com",
+                    "phone": "+48 889 169 547",
+                    "location": "Lodz, Poland",
+                    "linkedin": "https://linkedin.com/in/horacy-pigula"
+                }
+            },
+            "skills": [],
+            "experience": [],
+            "foundation": [],
+            "certifications": [],
+            "education": []
+        }
+        </script>
+
+        <script>
+    // Populate page from data.json (keeps existing static content as fallback).
+    // First try inline JSON (works with file://), then fetch data.json over HTTP.
+    async function loadSiteData() {
+        try {
+            let data = null;
+            const inline = document.getElementById('site-data');
+
+            // If running from file://, use inline JSON. When served via HTTP(s), prefer fetching external data.json.
+            if (window.location.protocol === 'file:') {
+                if (inline && inline.textContent.trim()) {
+                    try { data = JSON.parse(inline.textContent); }
+                    catch (e) { console.warn('Failed to parse inline site-data JSON:', e); }
+                }
+            } else {
+                // Served over HTTP/HTTPS — attempt to fetch external data.json first
+                try {
+                    const res = await fetch('data.json');
+                    if (res.ok) data = await res.json();
+                    else console.warn('data.json fetch returned non-ok status', res.status);
+                } catch (e) {
+                    console.warn('Fetch of data.json failed, falling back to inline JSON:', e);
+                }
+
+                // If fetch failed or returned no data, try inline as fallback
+                if (!data && inline && inline.textContent.trim()) {
+                    try { data = JSON.parse(inline.textContent); }
+                    catch (e) { console.warn('Failed to parse inline site-data JSON:', e); }
+                }
+            }
+
+            if (!data) return; // nothing to populate
+
+            // Basic meta
+            document.getElementById('profileName').textContent = data.meta.name || '';
+            document.getElementById('jobTitleEn').textContent = data.meta.jobTitle.en || '';
+            document.getElementById('jobTitlePl').textContent = data.meta.jobTitle.pl || '';
+            document.getElementById('summaryEn').textContent = data.meta.summary.en || '';
+            document.getElementById('summaryPl').textContent = data.meta.summary.pl || '';
+
+            // Contact
+            const emailLink = document.getElementById('emailLink');
+            if (emailLink) { emailLink.href = 'mailto:' + data.meta.contact.email; emailLink.lastChild && (emailLink.lastChild.textContent = ' ' + data.meta.contact.email); }
+            const phoneLink = document.getElementById('phoneLink');
+            if (phoneLink) { phoneLink.href = 'tel:' + data.meta.contact.phone.replace(/\s+/g,''); phoneLink.lastChild && (phoneLink.lastChild.textContent = ' ' + data.meta.contact.phone); }
+            const linkedinLink = document.getElementById('linkedinLink');
+            if (linkedinLink) { linkedinLink.href = data.meta.contact.linkedin; linkedinLink.lastChild && (linkedinLink.lastChild.textContent = ' ' + data.meta.contact.linkedin.replace(/^https?:\/\//,'')); }
+            const locationSpan = document.getElementById('locationSpan');
+            if (locationSpan) { locationSpan.lastChild && (locationSpan.lastChild.textContent = ' ' + data.meta.contact.location); }
+
+            // Skills
+            const skillsContainer = document.getElementById('skillsContainer');
+            if (skillsContainer && data.skills) {
+                skillsContainer.innerHTML = data.skills.map(s => `
+                    <div class="skill-category">
+                        <h3 class="text-orange-300 font-bold mb-4 lang-en">${s.title_en}</h3>
+                        <h3 class="text-orange-300 font-bold mb-4 lang-pl hidden">${s.title_pl}</h3>
+                        <div class="flex flex-wrap gap-2">${s.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
+                    </div>
+                `).join('');
+            }
+
+            // Experience
+            const expContainer = document.getElementById('experienceContainer');
+            if (expContainer) {
+                expContainer.innerHTML = (data.experience || []).map(exp => `
+                    <div class="relative pl-8 border-l-2 border-slate-800">
+                        <div class="dot-gray"></div>
+                        <div class="flex justify-between items-start mb-2">
+                                        <h3 class="text-xl font-bold text-orange-300 lang-en">${exp.title_en || exp.title}</h3>
+                                        <h3 class="text-xl font-bold text-orange-300 lang-pl hidden">${exp.title_pl || exp.title}</h3>
+                            <span class="text-sm font-mono text-slate-500"><time datetime="${exp.from}">${exp.from.replace('-','.')}</time> — ${exp.to}</span>
+                        </div>
+                        <p class="text-blue-400 font-medium mb-4">${exp.company}</p>
+                        <ul class="space-y-3 text-slate-400 text-white lang-en">${(exp.bullets.en||[]).map(b=>`<li>${b}</li>`).join('')}</ul>
+                        <ul class="space-y-3 text-slate-400 text-white lang-pl hidden">${(exp.bullets.pl||[]).map(b=>`<li>${b}</li>`).join('')}</ul>
+                    </div>
+                `).join('') + `
+                <h2 class="text-2xl font-bold text-yellow-500 mb-12 flex items-center gap-4">
+                    <span class="lang-en">Foundation Experience</span>
+                    <span class="lang-pl hidden">Korzenie Techniczne</span>
+                    <span class="h-px bg-slate-800 flex-1"></span>
+                </h2>
+                ` + (data.foundation || []).map(f => `
+                    <div class="relative pl-8 border-l-2 border-slate-800">
+                        <div class="dot-gray"></div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-orange-300 lang-en">${f.title_en || f.title}</h3>
+                            <h3 class="text-xl font-bold text-orange-300 lang-pl hidden">${f.title_pl || f.title}</h3>
+                            <span class="text-sm font-mono text-slate-500"><time datetime="${f.from}">${f.from.replace('-','.')}</time> – <time datetime="${f.to}">${f.to.replace('-','.')}</time></span>
+                        </div>
+                        <p class="text-blue-400 font-medium mb-4">${f.company}</p>
+                        <ul class="space-y-3 text-slate-400 text-white lang-en">${(f.bullets.en||[]).map(b=>`<li>${b}</li>`).join('')}</ul>
+                        <ul class="space-y-3 text-slate-400 text-white lang-pl hidden">${(f.bullets.pl||[]).map(b=>`<li>${b}</li>`).join('')}</ul>
+                    </div>
+                `).join('');
+            }
+
+            // Certifications
+            const certs = document.getElementById('certificationsContainer');
+            if (certs && data.certifications) {
+                certs.innerHTML = data.certifications.map(c => `
+                    <div class="cert-card">
+                        <div class="text-white font-bold text-lg leading-tight">${c.title}</div>
+                        <div class="text-blue-400 text-sm">${c.meta}</div>
+                    </div>
+                `).join('');
+            }
+
+            // Education
+            const edu = document.getElementById('educationContainer');
+            if (edu && data.education) {
+                edu.innerHTML = data.education.map(e => `
+                    <div class="cert-card">
+                        <div class="text-white font-bold text-lg leading-tight">${e.title}</div>
+                        <div class="text-blue-400 text-sm">${e.meta}</div>
+                    </div>
+                `).join('');
+            }
+
+        } catch (err) {
+            console.error('Failed to load site data', err);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadSiteData);
+    </script>
 
 </body>
 

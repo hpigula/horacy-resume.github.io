@@ -62,6 +62,24 @@ A clean, accessible, and performant portfolio website built with **vanilla HTML,
    ```
    Then visit `http://localhost:8000`
 
+## 📦 Data-driven content
+
+- This site loads most page content from `data.json` (skills, experience, certifications, education and translations). Edit `data.json` to update those sections instead of editing `index.html` directly.
+- Translation fields: use `title_en` / `title_pl` for job titles and `summary.en` / `summary.pl` for bilingual summaries. Experience and foundation items accept `bullets.en` and `bullets.pl` arrays.
+- When opening the site directly via `file://` the page falls back to an inline JSON snippet. For full editing/testing use a local static server (recommended):
+
+```bash
+# Python 3
+python -m http.server 8000
+
+# Node.js (http-server)
+npx http-server
+```
+
+Then open `http://localhost:8000` and the site will fetch `data.json`.
+
+If you update `data.json` while the local server is running, refresh the page to see changes. Clear cache if necessary.
+
 3. **Customize**:
    - Edit `index.html` for content (experience, skills, certifications, etc.)
    - Edit `style.css` for custom styling (colors, fonts, layout)

@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "name": "Horacy Piguła",
+    "url": "https://horacy-resume.github.io",
+    "jobTitle": {
+      "en": "Junior System Administrator | Junior Cloud Administrator",
+      "pl": "Młodszy Administrator Systemowy | Młodszy Administrator Chmury"
+    },
+    "summary": {
+      "en": "I'm an infrastructure-focused IT Engineer with 4+ years of experience in system operations, cloud administration, and automation. Proven track record managing Microsoft Entra ID, Linux (Ubuntu/Debian), and environments. Recently I've acquired the Azure Fundamentals certified.",
+      "pl": "Jestem inżynierem IT skoncentrowanym na infrastrukturze z ponad 4-letnim doświadczeniem w operacjach systemowych, administracji chmurowej i automatyzacji. Mam doświadczenie w zarządzaniu środowiskami Microsoft Entra ID, Linux (Ubuntu/Debian) oraz Docker. Niedawno zdobyłem certyfikat Azure Fundamentals."
+    },
+    "contact": {
+      "email": "horacy.pigula@gmail.com",
+      "phone": "+48 889 169 547",
+      "location": "Lodz, Poland",
+      "linkedin": "https://linkedin.com/in/horacy-pigula"
+    }
+  },
+  "languages": {
+    "english": { "label_en": "English:", "level_en": "C1 Advanced", "label_pl": "English:", "level_pl": "C1 Zaawansowany" },
+    "polish": { "label_en": "Polish:", "level_en": "Native", "label_pl": "Polish:", "level_pl": "Ojczysty" }
+  },
+  "skills": [
+    { "title_en": "Cloud & Identity", "title_pl": "Chmura i Tożsamość", "tags": ["M365 Administration","Microsoft Entra ID","Azure Fundamentals","IAM","RBAC","MFA"] },
+    { "title_en": "Systems & Virtualization", "title_pl": "Systemy i Wirtualizacja", "tags": ["Linux (Ubuntu/Debian)","Docker","Windows Server","KVM/VirtualBox"] },
+    { "title_en": "Automation & Tools", "title_pl": "Automatyzacja i Narzędzia", "tags": ["Bash & Python Scripting","Jira","ServiceNow","Postman","Wireshark"] },
+    { "title_en": "Networking & Security", "title_pl": "Sieci i Bezpieczeństwo", "tags": ["TCP/IP","DNS","VPN (OpenVPN/IPsec)","Basic Routing","Firewall Management"] }
+  ],
+    "experience": [
+    {
+      "title_en": "Technical Support Specialist (Infrastructure)",
+      "title_pl": "Specjalista Wsparcia Technicznego (Infrastruktura)",
+      "company": "Sii Polska",
+      "from": "2025-04",
+      "to": "Present",
+      "bullets": {
+        "en": [
+          "Contributing to infrastructure projects and ensuring operational stability for large-scale enterprise platforms.",
+          "Secured operational stability of national health platforms by resolving critical synchronization failures.",
+          "Accelerated testing cycles by 30% through the implementation of localized Docker environments.",
+          "Optimized network routing and connectivity configurations, reducing support tickets by 20% while ensuring full security compliance."
+        ],
+        "pl": [
+          "Udział w projektach infrastrukturalnych oraz zapewnianie stabilności operacyjnej dla platform o dużej skali.",
+          "Zapewnienie stabilności operacyjnej krajowych platform zdrowotnych poprzez rozwiązywanie krytycznych awarii synchronizacji.",
+          "Przyspieszenie cykli testowych o 30% dzięki wdrożeniu lokalnych środowisk Docker.",
+          "Optymalizacja routingu i konfiguracji połączeń sieciowych, co pozwoliło na redukcję zgłoszeń o 20% przy zachowaniu pełnej zgodności z procedurami bezpieczeństwa."
+        ]
+      }
+    },
+    {
+      "title_en": "Customer Support Advisor (Operations & Automation)",
+      "title_pl": "Doradca Obsługi Klienta (Operacje i Automatyzacja)",
+      "company": "Alorica & Foundever",
+      "from": "2024-01",
+      "to": "2025-02",
+      "bullets": {
+        "en": [
+          "Developed Bash/Python scripts, saving 5+ hours of manual work weekly.",
+          "Led transition to Microsoft 365 and managed provisioning of 200+ enterprise workstations.",
+          "Maintained 90% SLA for hardware and software requests through optimized workflows."
+        ],
+        "pl": [
+          "Tworzenie skryptów Bash/Python, oszczędzające 5h pracy manualnej tygodniowo.",
+          "Zarządzanie migracją do Microsoft 365 i provisioningiem ponad 200 stacji roboczych.",
+          "Utrzymanie SLA na poziomie 90% poprzez optymalizację procesów obsługi zgłoszeń."
+        ]
+      }
+    },
+    {
+      "title_en": "Senior Service Desk Agent (Tier 1 with partial Tier 2/Systems)",
+      "title_pl": "Starszy Agent Service Desk (Tier 1 z częściowym Tier 2/Systemy)",
+      "company": "Fujitsu",
+      "from": "2021-11",
+      "to": "2023-08",
+      "bullets": {
+        "en": [
+          "Provided high-touch VIP support for C-level executives, ensuring zero downtime in global environments.",
+          "Designed remote diagnostic checklists, significantly minimizing hardware-related downtime."
+        ],
+        "pl": [
+          "Obsługa VIP dla kadry zarządzającej (C-level), zapewniająca ciągłość pracy w środowisku globalnym.",
+          "Projektowanie list kontrolnych diagnostyki zdalnej, minimalizujące przestoje sprzętowe."
+        ]
+      }
+    }
+  ],
+  "foundation": [
+    {
+      "title_en": "Retail Assistant",
+      "title_pl": "Asystent Sprzedaży",
+      "company": "\"Anna\" Store",
+      "from": "2020-02",
+      "to": "2021-05",
+      "bullets": {
+        "en": [
+          "Managed operations for 50+ daily customers with 100% transaction accuracy.",
+          "Optimized workflows and auditing, increasing returning clients by 2%.",
+          "Maintained printing/copying systems, reducing downtime by 32%."
+        ],
+        "pl": [
+          "Zarządzanie operacjami dla ponad 50 klientów dziennie przy pełnej poprawności transakcji.",
+          "Nadzór nad inwentaryzacją, co zwiększyło wskaźnik powracających klientów o 2%.",
+          "Konserwacja systemów drukujących, redukująca przestoje sprzętowe o 32%."
+        ]
+      }
+    },
+    {
+      "title_en": "Computer Technician",
+      "title_pl": "Technik Komputerowy",
+      "company": "Camara Education Ltd.",
+      "from": "2013-08",
+      "to": "2015-05",
+      "bullets": {
+        "en": [
+          "Achieved 100% integrity for 200+ devices through meticulous auditing.",
+          "Accelerated deployment by 30% through standardized OS imaging."
+        ],
+        "pl": [
+          "Osiągnięcie 100% rzetelności inwentaryzacyjnej dla ponad 200 urządzeń.",
+          "Przyspieszenie instalacji o 30% dzięki standaryzacji obrazów systemu."
+        ]
+      }
+    }
+  ],
+  "certifications": [
+    { "title": "Azure Fundamentals (AZ-900)", "meta": "Microsoft Certified | Feb 2026" },
+    { "title": "E.14 Certification", "meta": "Web Development & Database Administration" }
+  ],
+  "education": [
+    { "title": "IT & eBusiness", "meta": "Killester College of Further Education (Dublin)" },
+    { "title": "Data Networking (Cisco CCNA Based)", "meta": "Killester College of Further Education (Dublin)" }
+  ]
+}

@@ -12,5 +12,13 @@
     "addressLocality": "Lodz",
     "addressCountry": "PL"
   },
-  "knowsAbout": ["Cloud Administration", "System Administration", "Linux", "Docker", "Microsoft Entra ID", "Azure"]
+  "knowsAbout": ["Cloud Administration", "System Administration", "Linux", "Docker", "Microsoft Entra ID", "Azure"],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Azure Fundamentals (AZ-900)",
+      "issuer": "Microsoft",
+      "dateIssued": "2026-02"
+    }
+  ]
 }
