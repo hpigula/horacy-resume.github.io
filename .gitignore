@@ -21,3 +21,6 @@ build/
 
 # OS
 *.log
+generate_pdf.py
+requirements.txt
+resume.pdf
